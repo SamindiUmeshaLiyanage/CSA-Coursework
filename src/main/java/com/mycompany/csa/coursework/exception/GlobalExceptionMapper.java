@@ -25,7 +25,6 @@ public class GlobalExceptionMapper implements ExceptionMapper<Throwable> {
 
     @Override
     public Response toResponse(Throwable exception) {
-        // use Level.SEVERE for unexpected errors
         LOGGER.log(Level.SEVERE, "Unexpected error occurred: " + exception.getMessage(), exception);
 
         ErrorMessage error = new ErrorMessage(

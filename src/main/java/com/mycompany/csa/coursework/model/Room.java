@@ -13,8 +13,8 @@ import java.util.List;
 
 public class Room implements BaseModel{
     private String id; // Unique identifier, e.g., "LIB-301"
-    private String name; // Human-readable name
-    private int capacity; // Maximum occupancy
+    private String name; 
+    private int capacity; 
     private List<String> sensorIds = new ArrayList<>();
 
     public Room() {}
